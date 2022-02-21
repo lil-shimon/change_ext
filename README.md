@@ -5,7 +5,7 @@ coming soon
 ## specification
 
 - [ ] specify a directory
-- [ ] convert jpg files under the specified directory to png (default)
+- [x] convert jpg files under the specified directory to png (default)
 - [ ] the directory processed recursively
 - [ ] you can specify the image format before and after conversion
 
