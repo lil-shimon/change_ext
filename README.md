@@ -1,11 +1,9 @@
 ## Usage
 
----
 coming soon
 
 ## specification
 
----
 - [ ] specify a directory
 - [ ] convert jpg files under the specified directory to png (default)
 - [ ] the directory processed recursively
