@@ -1,3 +1,5 @@
+use change_ext::convert;
+
 fn main() {
-    println!("Hello, world!");
+    convert::converter::convert_jpg_to_png();
 }
