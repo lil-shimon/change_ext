@@ -1,13 +1,18 @@
 use image::GenericImageView;
 
 pub fn convert_jpg_to_png() {
-    /// image url
-    let test_img_url = "src/convert/test.jpg";
 
     /// read image
-    let image = image::open(test_img_url).unwrap();
+    let image = image::open("src/convert/test.jpg").unwrap();
 
     /// image size
     let size = image.dimensions();
-    println!("{:?}", size)
+    println!("image size >>> {:?}", size);
+
+    /// image color type
+    let color_type = image.color();
+    println!("image color type >>> {:?}", color_type);
+
+    /// save image as png
+    image.save("src/convert/test.png").unwrap();
 }
