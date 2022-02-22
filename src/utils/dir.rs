@@ -7,3 +7,16 @@ pub fn pwd() -> std::io::Result<()> {
 
     Ok(())
 }
+
+#[cfg(test)]
+mod test {
+    use crate::utils::dir::pwd;
+
+    #[test]
+    fn test_pwd() {
+        match pwd() {
+            Ok(..) => { println!("ok") }
+            Err(e) => { println!("error: {}", e) }
+        }
+    }
+}
